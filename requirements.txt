@@ -4,5 +4,6 @@ gunicorn
 python-dotenv
 groq
 langchain
+langchain-groq
 faiss-cpu
 sentence-transformers
