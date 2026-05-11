@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+gunicorn
+python-dotenv
+groq
+langchain
+faiss-cpu
+sentence-transformers
