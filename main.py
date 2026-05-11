@@ -11,6 +11,10 @@ import os
 load_dotenv()
 
 app = FastAPI(title="SHL Conversational Assessment Recommender")
+@app.get("/")
+async def root():
+    return {"status": "ok"}
+
 
 
 # =========================
@@ -93,6 +97,7 @@ async def chat(request: ChatRequest):
         "religion",
         "ignore previous instructions",
         "system prompt"
+
     ]
 
     if any(word in lower_msg for word in blocked_topics):
